@@ -21,6 +21,7 @@ import android.content.Context;
 import com.amazonaws.mobile.samples.mynotes.repository.NotesRepository;
 import com.amazonaws.mobile.samples.mynotes.services.AnalyticsService;
 import com.amazonaws.mobile.samples.mynotes.services.DataService;
+import com.amazonaws.mobile.samples.mynotes.services.aws.AWSService;
 import com.amazonaws.mobile.samples.mynotes.services.mock.MockAnalyticsService;
 import com.amazonaws.mobile.samples.mynotes.services.mock.MockDataService;
 
@@ -43,10 +44,31 @@ public class Injection {
     public static synchronized NotesRepository getNotesRepository() {
         return notesRepository;
     }
-
+/*
     public static synchronized void initialize(Context context) {
         if (analyticsService == null) {
             analyticsService = new MockAnalyticsService();
+        }
+
+        if (dataService == null) {
+            dataService = new MockDataService();
+        }
+
+        if (notesRepository == null) {
+            notesRepository = new NotesRepository(dataService);
+        }
+    }
+*/
+
+    private static AWSService awsService = null;
+
+    public static synchronized void initialize(Context context) {
+        if (awsService == null) {
+            awsService = new AWSService(context);
+        }
+
+        if (analyticsService == null) {
+            analyticsService = new AWSAnalyticsService(context, awsService);
         }
 
         if (dataService == null) {

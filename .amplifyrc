@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "ndroidemo-20181108233436-authRole",
+            "UnauthRoleArn": "arn:aws:iam::865521683483:role/ndroidemo-20181108233436-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::865521683483:role/ndroidemo-20181108233436-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "ndroidemo-20181108233436-deployment",
+            "UnauthRoleName": "ndroidemo-20181108233436-unauthRole",
+            "StackName": "ndroidemo-20181108233436",
+            "StackId": "arn:aws:cloudformation:us-east-1:865521683483:stack/ndroidemo-20181108233436/8753eeb0-e3e9-11e8-9608-50fae98974fd"
+        }
+    }
+}

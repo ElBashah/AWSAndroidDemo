@@ -1,0 +1,11 @@
+{
+    "appName": "awsandroiddemo",
+    "roleName": "pinpointLambdaRolec60c4f65",
+    "cloudWatchPolicyName": "cloudWatchPolicyc60c4f65",
+    "pinpointPolicyName": "pinpointPolicyc60c4f65",
+    "authPolicyName": "pinpoint_amplify_c60c4f65",
+    "unauthPolicyName": "pinpoint_amplify_c60c4f65",
+    "authRoleName": "ndroidemo-20181108233436-authRole",
+    "unauthRoleName": "ndroidemo-20181108233436-unauthRole",
+    "IAMPrefix": "865521683483"
+}

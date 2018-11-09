@@ -1,0 +1,16 @@
+{
+    "identityPoolName": "awsandroiddemo_identitypool_62b0f804",
+    "allowUnauthenticatedIdentities": true,
+    "thirdPartyAuth": false,
+    "lambdaLogPolicy": "awsandroiddemo_lambda_log_policy",
+    "openIdLambdaRoleName": "awsandroiddemo_openid_lambda_role",
+    "openIdRolePolicy": "awsandroiddemo_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "awsandroiddemo_openid_lambda_iam_policy",
+    "openIdLogPolicy": "awsandroiddemo_openid_lambda_log_policy",
+    "authSelections": "identityPoolOnly",
+    "resourceName": "cognitoa3186c12",
+    "unAuthRoleName": "ndroidemo-20181108233436-unauthRole",
+    "authRoleName": "ndroidemo-20181108233436-authRole",
+    "unAuthRoleArn": "arn:aws:iam::865521683483:role/ndroidemo-20181108233436-unauthRole",
+    "authRoleArn": "arn:aws:iam::865521683483:role/ndroidemo-20181108233436-authRole"
+}
